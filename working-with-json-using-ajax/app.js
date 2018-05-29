@@ -10,7 +10,7 @@ function loadCustomer(e) {
 
   xhr.onload = function(){
     if(this.status === 200) {
-      // console.log(this.responseText);
+      console.log(this.responseText);
       const customer = JSON.parse(this.responseText);
       const output = `
         <ul>
@@ -37,7 +37,7 @@ function loadCustomers(e) {
 
   xhr.onload = function(){
     if(this.status === 200) {
-      // console.log(this.responseText);
+      console.log(this.responseText);
       const customers = JSON.parse(this.responseText);
       let output = '';
       customers.forEach((customer)=>{
